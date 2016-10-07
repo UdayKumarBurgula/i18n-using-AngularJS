@@ -1,0 +1,18 @@
+{
+    "USERNAME": "UserName",
+    "PASSWORD": "password",
+    "NAME": "Hai !, My Name is MadhankumarJ. Pleased to Meet you.",
+    "PROFESSION": "I am an Engineer @ObjectFrontier. Love to play and fun with programming.",
+    "BUTTON_LANG_JP": "Japan",
+    "BUTTON_LANG_EN": "English",
+    "LOGIN": "Login",
+    "SIGNUP": "Signup",
+    "LOGINFORM": "LoginForm",
+    "SIGNUPFORM": "SignupForm",
+    "HOME": "HOME",
+    "ABOUT": "ABOUT",
+    "LOGOUT": "LOGOUT",
+    "CONTENT": "Bilingual Demo Application",
+
+    "directives.language-select.Language": "Language"
+}

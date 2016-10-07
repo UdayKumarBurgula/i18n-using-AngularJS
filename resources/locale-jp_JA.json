@@ -1,0 +1,16 @@
+{
+    "USERNAME": "ユーザ名",
+    "PASSWORD": "パスワード",
+    "NAME": "初めまして, 私 マドアンカマー.J デス. どーぞ よろしく おねがいします.",
+    "PROFESSION": "私 エンジニア デス.",
+    "BUTTON_LANG_JP": "日本",
+    "BUTTON_LANG_EN": "英語",
+    "LOGIN": "ログイン",
+    "LOGINFORM": "ログインフォーム",
+    "HOME": "ホーム",
+    "ABOUT": "約",
+    "LOGOUT": "ログアウト",
+    "CONTENT": "バイリンガル",
+
+    "directives.language-select.Language": "言語"
+}

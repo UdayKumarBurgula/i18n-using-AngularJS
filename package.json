@@ -1,0 +1,42 @@
+{
+  "name": "bilingualdemo",
+  "version": "1.0.0",
+  "description": "bilingual app",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhankumar028/bilingual_node.git"
+  },
+  "author": "MadhankumarJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhankumar028/bilingual_node/issues"
+  },
+  "homepage": "https://github.com/madhankumar028/bilingual_node#readme",
+
+  "dependencies": {
+      "express" : "~4.0.0",
+      "mongoose" : "~3.8.1",
+      "bcrypt-nodejs" : "latest",
+      "morgan": "~1.0.0",
+      "body-parser": "~1.0.0",
+      "cookie-parser": "~1.0.0",
+      "method-override": "~1.0.0",
+      "express-session": "~1.0.0"
+  },
+
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "jshint-stylish": "^2.2.1",
+    "grunt-express": "latest",
+    "grunt-script-link-tags": "latest",
+    "grunt-nodemon": "~0.3.0",
+    "grunt-open": "latest",
+    "grunt-concurrent": "latest"
+  }
+}
