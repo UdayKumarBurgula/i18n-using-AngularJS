@@ -1,23 +1,24 @@
-var userModel = require('../models/user.js');
+var User = require('../models/user.js');
 
-exports.function = function(reqData, callback) {
+exports.addUser = function(reqData, callback) {
 
-    userModel.User.findOne({userName: reqData.userName}, function (err, existingUser) {
+    User.findOne({userName: reqData.user}, function (err, existingUser) {
         if (err) {
             callback('Error while adding the user', null);
         } else if (existingUser) {
             callback('UserName Is Already Exists', null);
         } else {
-            var userSchema = new userModel.userSchema();
-            userSchema.userName = reqData.userName;
-            userSchema.password = reqData.password;
+            var newUser = new User();
+            newUser.user.userName = reqData.user;
+            newUser.user.password = reqData.pass;
 
-            userSchema.save(function (errors, data) {
+            console.log(reqData.user, reqData.pass);
+
+            newUser.save(function (errors, data) {
                 if (errors) {
                     callback('Error adding user', null);
                     return;
                 }
-
                 callback(null, data);
             });
         }

@@ -8,7 +8,7 @@ module.exports = function (grunt) {
             options: {
                 reporter: require('jshint-stylish')
             },
-            all: ['Grunfile.js', 'src/**/*.js']
+            all: ['Gruntfile.js', 'src/**/*.js']
         },
 
         // watch all the js and html files for any changes

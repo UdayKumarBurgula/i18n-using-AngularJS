@@ -24,7 +24,7 @@
 
             var options = {
                 url: '/v1/addUser',
-                method: POST,
+                method: 'POST',
                 data: {
                     name: userName,
                     pass: password
@@ -36,6 +36,7 @@
             $http(options)
             .success(function(data, status, header, config) {
                 deferred.resolve(data.data);
+                $state.go('login');
             }).error(function(data, status, header, config) {
                 deferred.reject('Error adding user');
             });

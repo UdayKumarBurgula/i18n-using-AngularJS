@@ -10,13 +10,10 @@ module.exports = function (app) {
     });
 
     app.post('/v1/addUser', function (req, res) {
-        signupController.addUser();
+        signupController.addUser(req, res);
     });
 
     app.post('/v1/login', function (req, res) {
-        console.log('reached the service layer');
-        var user = req.body.user;
-        console.log(user);
         loginController.validateUser(req, res);
     });
 };
