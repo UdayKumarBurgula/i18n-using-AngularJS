@@ -9,11 +9,11 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname + '/index.html'));
     });
 
-    app.post('/v1/addUser', function (req, res) {
+    app.post('/api/addUser', function (req, res) {
         signupController.addUser(req, res);
     });
 
-    app.post('/v1/login', function (req, res) {
+    app.post('/api/login', function (req, res) {
         loginController.validateUser(req, res);
     });
 };

@@ -23,7 +23,7 @@
         function validateUser(userName, password)  {
 
             var options = {
-                url: '/v1/login',
+                url: '/api/login',
                 method: 'POST',
                 data: {
                     user: userName,

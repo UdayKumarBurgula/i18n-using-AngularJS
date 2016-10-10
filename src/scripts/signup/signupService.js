@@ -23,7 +23,7 @@
         function addUser(userName, password) {
 
             var options = {
-                url: '/v1/addUser',
+                url: '/api/addUser',
                 method: 'POST',
                 data: {
                     name: userName,
