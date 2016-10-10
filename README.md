@@ -1,6 +1,6 @@
 # bilingual_node
 
-Follow the steps to start the project:
+Follow the below steps to start this project:
 
 -> Install Node, Mongodb from the official site, if you don't have it already.
 -> Install grunt using this command (npm install -g grunt-cli)
