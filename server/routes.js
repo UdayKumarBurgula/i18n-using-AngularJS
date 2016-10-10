@@ -9,12 +9,14 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname + '/index.html'));
     });
 
-    app.post('/addUser', function (req, res) {
+    app.post('/v1/addUser', function (req, res) {
         signupController.addUser();
     });
 
     app.post('/v1/login', function (req, res) {
         console.log('reached the service layer');
+        var user = req.body.user;
+        console.log(user);
         loginController.validateUser(req, res);
     });
-}
+};

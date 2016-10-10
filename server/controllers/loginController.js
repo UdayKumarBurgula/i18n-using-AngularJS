@@ -3,8 +3,8 @@ var loginService = require('../service/loginService.js');
 exports.validateUser = function(req, res) {
 
     var reqData = {
-        user: req.data.user,
-        pass: req.data.pass
+        user: req.body.user,
+        pass: req.body.pass
     };
 
     loginService.validateUser(reqData, function(errors, data) {
@@ -21,4 +21,4 @@ exports.validateUser = function(req, res) {
             });
         }
     });
-}
+};

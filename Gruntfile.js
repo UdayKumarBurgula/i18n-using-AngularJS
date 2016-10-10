@@ -103,4 +103,4 @@ module.exports = function (grunt) {
         'open',
         'express'
     ]);
-}
+};
