@@ -23,7 +23,7 @@
         function addUser(userName, password) {
 
             var options = {
-                url: '/addUser',
+                url: '/v1/addUser',
                 method: POST,
                 data: {
                     name: userName,
@@ -36,7 +36,7 @@
             $http(options)
             .success(function(data, status, header, config) {
                 deferred.resolve(data.data);
-            }).failure(function(data, status, header, config) {
+            }).error(function(data, status, header, config) {
                 deferred.reject('Error adding user');
             });
         }
