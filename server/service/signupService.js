@@ -1,4 +1,5 @@
 var User = require('../models/user.js');
+var hash = require('../utils/passwordHashUtil.js');
 
 exports.addUser = function(reqData, callback) {
 
@@ -8,11 +9,14 @@ exports.addUser = function(reqData, callback) {
         } else if (existingUser) {
             callback('UserName Is Already Exists', null);
         } else {
-            var newUser = new User();
-            newUser.user.userName = reqData.user;
-            newUser.user.password = reqData.pass;
 
             console.log(reqData.user, reqData.pass);
+
+            var hashValue = hash.generateHash(reqData.pass);
+
+            var newUser = new User();
+            newUser.user.userName = reqData.user;
+            newUser.user.password = hashValue;
 
             newUser.save(function (errors, data) {
                 if (errors) {
