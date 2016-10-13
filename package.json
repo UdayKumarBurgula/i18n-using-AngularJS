@@ -37,6 +37,7 @@
     "grunt-script-link-tags": "latest",
     "grunt-nodemon": "~0.3.0",
     "grunt-open": "latest",
-    "grunt-concurrent": "latest"
+    "grunt-concurrent": "latest",
+    "lite-server": "latest"
   }
 }
