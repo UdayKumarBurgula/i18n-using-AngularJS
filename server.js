@@ -8,12 +8,18 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 
-var localDB = require('./config/database');
+var config = require('config');
 
-mongoose.connect(localDB.url);
+mongoose.connect(config.url);
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+
+if (config.util.getEnv('NODE_ENV') !== 'test') {
+    app.use(morgan('dev'));
+}
 
 app.use(express.static('./src'));
-app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());

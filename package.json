@@ -4,7 +4,8 @@
   "description": "bilingual app",
   "main": "Gruntfile.js",
   "scripts": {
-    "dev": "node server.js"
+    "start": "SET NODE_ENV=dev&& node server.js",
+    "test": "mocha --timeout 10000"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,9 @@
     "grunt-nodemon": "~0.3.0",
     "grunt-open": "latest",
     "grunt-concurrent": "latest",
-    "lite-server": "latest"
+
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.4.5"
   }
 }
