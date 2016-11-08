@@ -15,15 +15,13 @@ module.exports = function (grunt) {
         watch: {
             scripts: {
                 files: 'src/**/*.js',
-                options: {
-                    livereload: true
-                },
+                options: {livereload: 1337},
                 all: ['Gruntfile.js', 'src/**/*.js']
             },
             tpl: {
                 files: 'src/**/*.html',
                 tasks: ['express'],
-                options: {livereload: true},
+                options: {livereload: 35729},
             },
             options: { livereload: true }
         },
@@ -101,7 +99,7 @@ module.exports = function (grunt) {
     grunt.registerTask('test', ['jshint']);
     grunt.registerTask('link', ['tags']);
 
-    grunt.registerTask('default', [
+    grunt.registerTask('server', [
         'concurrent',
         'express'
     ]);

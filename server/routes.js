@@ -11,6 +11,7 @@ module.exports = function (app) {
 
     app.post('/api/addUser', function (req, res) {
         signupController.addUser(req, res);
+        console.log('hai');
     });
 
     app.post('/api/login', function (req, res) {

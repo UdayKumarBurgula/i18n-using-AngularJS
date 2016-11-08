@@ -3,10 +3,8 @@ process.env.NODE_ENV = 'test';
 var mongoose = require("mongoose");
 var User = require('../server/models/user.js');
 
-var chai = require('chai');
+var should = require('chai').should();
 var chaiHttp = require('chai-http');
-var server = require('../server');
-var should = chai.should();
 
 chai.use(chaiHttp);
 
@@ -16,7 +14,7 @@ describe('User', function () {
     * Test the api/addUser route
     */
     describe('addUser', function () {
-        it('it should not POST a user without name, password field', function (done) {
+        it('it should not POST a user without name and password field', function (done) {
             var user = {
                 name: "test",
                 pass: "test"

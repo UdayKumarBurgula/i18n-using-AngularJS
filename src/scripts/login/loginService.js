@@ -41,6 +41,8 @@
             .error(function(status, headers, config, data) {
                 deferred.reject('unexpected error');
             });
+
+            return deferred.promise;
         }
     }
 }());

@@ -40,6 +40,8 @@
             }).error(function(data, status, header, config) {
                 deferred.reject('Error adding user');
             });
+
+            return deferred.promise;
         }
     }
 }());

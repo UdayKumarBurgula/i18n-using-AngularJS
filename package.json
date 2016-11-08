@@ -4,8 +4,7 @@
   "description": "bilingual app",
   "main": "Gruntfile.js",
   "scripts": {
-    "start": "SET NODE_ENV=dev&& node server.js",
-    "test": "mocha --timeout 10000"
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -17,31 +16,30 @@
     "url": "https://github.com/madhankumar028/bilingual_node/issues"
   },
   "homepage": "https://github.com/madhankumar028/bilingual_node#readme",
-
   "dependencies": {
-      "express" : "~4.0.0",
-      "mongoose" : "~3.8.1",
-      "bcrypt-nodejs" : "latest",
-      "morgan": "~1.0.0",
-      "body-parser": "~1.0.0",
-      "cookie-parser": "~1.0.0",
-      "method-override": "~1.0.0",
-      "express-session": "~1.0.0"
+    "express": "~4.0.0",
+    "mongoose": "~3.8.1",
+    "bcrypt-nodejs": "latest",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "method-override": "~1.0.0",
+    "express-session": "~1.0.0"
   },
-
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-watch": "latest",
-    "jshint-stylish": "^2.2.1",
-    "grunt-express": "latest",
-    "grunt-script-link-tags": "latest",
-    "grunt-nodemon": "~0.3.0",
-    "grunt-open": "latest",
-    "grunt-concurrent": "latest",
-
     "chai": "^3.5.0",
     "chai-http": "^2.0.1",
+    "grunt": "~0.4.4",
+    "grunt-concurrent": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-express": "latest",
+    "grunt-nodemon": "~0.3.0",
+    "grunt-open": "latest",
+    "grunt-parallel": "^0.5.1",
+    "grunt-script-link-tags": "latest",
+    "jshint-stylish": "^2.2.1",
+    "lite-server": "^2.2.2",
     "mocha": "^2.4.5"
   }
 }
