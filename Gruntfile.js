@@ -27,16 +27,16 @@ module.exports = function (grunt) {
         },
 
         // server to make livereload
-        express:{
-  			all:{
-  				options:{
-  					port:8080,
-  					hostname:'localhost',
-  					bases:['.'],
-  					livereload:true
-  				}
-  			}
-  		},
+        // express:{
+  // 			all:{
+  // 				options:{
+  // 					port:8080,
+  // 					hostname:'localhost',
+  // 					bases:['.'],
+  // 					livereload:true
+  // 				}
+  // 			}
+  // 		},
 
         // nodemon to start the node server
         nodemon: {
@@ -51,41 +51,43 @@ module.exports = function (grunt) {
                 logConcurrentOutput: true
             },
             tasks: ['nodemon', 'watch']
-        },
+        }
 
-        // open to start the chrome
-        open: {
-            dev: {
-                path: 'http://localhost:8080/',
-                app: 'Google chrome'
-            }
-        },
 
-        tags: {
-    	    build: {
-    	        options: {
-    		        scriptTemplate: '<script src="{{ path }}"></script>',
-    				linkTemplate: '<link href="{{ path }}"/>',
-    	            openTag: '<!-- start template tags -->',
-    	            closeTag: '<!-- end template tags -->'
-    	        },
-    	        src: [
-    	            'src/scripts/**/*.js'
-    	        ],
-    	        dest: 'src/index.html'
-    	    },
-            buildLinks: {
-    	        options: {
-    				linkTemplate: '<link rel="stylesheet" type="text/css" href="{{ path }}" media="screen"/>',
-    	            openTag: '<!-- start css template tags -->',
-    	            closeTag: '<!-- end css template tags -->'
-    	        },
-    	        src: [
-    	            'style/*.css'
-    	        ],
-    	        dest: 'src/index.html'
-	       }
-	   }
+
+        // // open to start the chrome
+        // open: {
+        //     dev: {
+        //         path: 'http://localhost:8080/',
+        //         app: 'Google chrome'
+        //     }
+        // },
+
+    //     tags: {
+    // 	    build: {
+    // 	        options: {
+    // 		        scriptTemplate: '<script src="{{ path }}"></script>',
+    // 				linkTemplate: '<link href="{{ path }}"/>',
+    // 	            openTag: '<!-- start template tags -->',
+    // 	            closeTag: '<!-- end template tags -->'
+    // 	        },
+    // 	        src: [
+    // 	            'src/scripts/**/*.js'
+    // 	        ],
+    // 	        dest: 'src/index.html'
+    // 	    },
+    //         buildLinks: {
+    // 	        options: {
+    // 				linkTemplate: '<link rel="stylesheet" type="text/css" href="{{ path }}" media="screen"/>',
+    // 	            openTag: '<!-- start css template tags -->',
+    // 	            closeTag: '<!-- end css template tags -->'
+    // 	        },
+    // 	        src: [
+    // 	            'style/*.css'
+    // 	        ],
+    // 	        dest: 'src/index.html'
+	//        }
+	//    }
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');

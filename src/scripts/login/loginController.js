@@ -3,14 +3,16 @@
     'use strict';
 
     angular
-    .module('app.login', [])
-    .controller('loginController', loginCtrl);
+        .module('app.login', [])
+        .controller('loginController', loginCtrl);
+
+    loginCtrl.$inject = ['$scope', '$state', 'loginService'];
 
     // localStorageService need to inject if we use local storage
     function loginCtrl($scope, $state, loginService) {
 
         var self = this;
-            
+
         self.validateUser = validateUser;
 
         function validateUser(userName, password) {
