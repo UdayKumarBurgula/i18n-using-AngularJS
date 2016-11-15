@@ -27,4 +27,4 @@
             LoginService.validateUser(userName, password);
         }
     }
-}());
+})();

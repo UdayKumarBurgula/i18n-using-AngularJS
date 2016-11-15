@@ -1,8 +1,5 @@
 {
     "files" : "./src/**/*.{js, html, css}",
     "server" : { "baseDir" : "./src" },
-    "browser" : ["chrome", "firefox"],
-    "proxy": {
-        "target": "http://localhost:8080"
-    }
+    "browser" : ["chrome", "firefox"]
 }

@@ -16,4 +16,4 @@
             controller: 'HomeController as HomeCtrl'
         });
     });
-}());
+})();

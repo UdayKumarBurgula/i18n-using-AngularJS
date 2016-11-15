@@ -27,6 +27,6 @@
             // }
 
             SignupService.addUser(userName, password);
-        };
+        }
     }
-}());
+})();

@@ -8,4 +8,4 @@
         },
         'preferredLocale': 'en_US'
     });
-}());
+})();
