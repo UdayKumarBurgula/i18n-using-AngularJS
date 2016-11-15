@@ -47,12 +47,12 @@
              name: 'login',
              url: '/login',
              templateUrl: 'views/login/login.html',
-             controller: 'loginController as loginCtrl'
+             controller: 'LoginController as LoginCtrl'
          }).state('signup', {
              name: 'signup',
              url: '/signup',
              templateUrl: 'views/signup/signup.html',
-             controller: 'signupController as signupCtrl'
+             controller: 'SignupController as SignupCtrl'
          });
 
          $urlRouterProvider.otherwise("/login");

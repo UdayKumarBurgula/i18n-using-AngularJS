@@ -3,9 +3,9 @@
     'use strict';
 
     angular.module('app.signup')
-        .service('signupService', signupService);
+        .service('SignupService', SignupService);
 
-    function signupService($state, $q, $http) {
+    function SignupService($state, $q, $http) {
 
         var self = this;
 

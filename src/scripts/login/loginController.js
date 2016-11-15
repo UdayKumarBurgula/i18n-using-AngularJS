@@ -4,12 +4,12 @@
 
     angular
         .module('app.login', [])
-        .controller('loginController', loginCtrl);
+        .controller('LoginController', LoginCtrl);
 
-    loginCtrl.$inject = ['$scope', '$state', 'loginService'];
+    LoginCtrl.$inject = ['$scope', '$state', 'LoginService'];
 
     // localStorageService need to inject if we use local storage
-    function loginCtrl($scope, $state, loginService) {
+    function LoginCtrl($scope, $state, LoginService) {
 
         var self = this;
 
@@ -24,7 +24,7 @@
             //     $scope.message = "invalidUser";
             // }
 
-            loginService.validateUser(userName, password);
+            LoginService.validateUser(userName, password);
         }
     }
 }());

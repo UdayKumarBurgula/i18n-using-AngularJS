@@ -2,11 +2,12 @@
 
     'use strict';
 
-    var home = angular.module('app.home');
+    angular.module('app.home')
+    .controller('HomeController', HomeCtrl);
 
-    home.controller('homeController', homeCtrl);
+    HomeCtrl.$inject = ['$scope', '$state'];
 
-    function homeCtrl($scope, $state, localStorageService) {
+    function HomeCtrl($scope, $state) {
         $scope.logout = function logout() {
             $state.go('login');
         };

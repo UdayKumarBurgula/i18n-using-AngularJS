@@ -2,7 +2,8 @@
 
     'use strict';
 
-    var app = angular.module('app.signup', []);
+    angular.module('app.signup', [])
+    .controller('SignupController', SignupController);
 
     // app.config(function(localStorageServiceProvider) {
     //     localStorageServiceProvider
@@ -10,10 +11,10 @@
     //         .setStorageType('localStorage');
     // });
 
-    app.controller('signupController', signupController);
+    SignupController.$inject = ['SignupService'];
 
     // localStorageService- need to inject here if we use localStorage
-    function signupController(signupService) {
+    function SignupController(SignupService) {
 
         var self = this;
         self.saveUser = saveUser;
@@ -25,7 +26,7 @@
             //     localStorageService.set('password', $scope.password);
             // }
 
-            signupService.addUser(userName, password);
+            SignupService.addUser(userName, password);
         };
     }
 }());

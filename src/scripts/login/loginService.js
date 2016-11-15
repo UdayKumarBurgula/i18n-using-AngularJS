@@ -4,9 +4,9 @@
 
     angular
     .module('app.login')
-    .service('loginService', loginService);
+    .service('LoginService', LoginService);
 
-    function loginService($state, $q, $http) {
+    function LoginService($state, $q, $http) {
 
         var self = this;
         self.validateUser = validateUser;
