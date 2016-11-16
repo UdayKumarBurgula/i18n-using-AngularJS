@@ -2,16 +2,18 @@
 
     'use strict';
 
-    var app = angular.module('app');
+    angular.module('app')
+
+    /* language selector directive that can be used anywhere in the app */
+    .directive('ngTranslateLanguageSelect', ngTranslateLanguageSelect);
 
     /**
-    * custom directive ngTranslateLanguageSelect to handle bilingual
     * @memberof module:app
     *
     * @requires Locales constant
     * @requires $translate
     */
-    app.directive('ngTranslateLanguageSelect', function () {
+    function ngTranslateLanguageSelect () {
 
         return {
             restrict: 'A',
@@ -43,5 +45,5 @@
                 };
             }
         };
-    });
-}());
+    }
+})();

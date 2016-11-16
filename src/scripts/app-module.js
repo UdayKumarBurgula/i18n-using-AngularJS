@@ -8,7 +8,7 @@
     *
     * @module app
     */
-    var app = angular.module('app', [
+    angular.module('app', [
 
                     'ui.router',
                     'pascalprecht.translate',
@@ -19,9 +19,8 @@
                     'app.login',
                     'app.signup',
                     'app.home'
-                  ]);
-
-    app.config(config);
+                  ])
+     .config(config);
 
      /**
      * Default configuration for the application.

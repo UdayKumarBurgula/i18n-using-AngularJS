@@ -12,7 +12,7 @@ var config = require('./config/db.js');
 
 mongoose.connect(config.url);
 
-app.use(morgan('dev'));
+app.use(morgan('dev')); // logs all the request in console
 
 app.use(express.static('./src'));
 app.use(cookieParser());
