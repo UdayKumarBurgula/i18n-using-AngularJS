@@ -11,7 +11,7 @@
   3. Start your server using node server.js
  </pre>
   
-# To start only client do 
+# To start only client
 <pre> npm run dev </pre> 
 Browser-sync will also get configured.
 
