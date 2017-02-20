@@ -1,0 +1,22 @@
+{
+  "name": "angulari18n",
+  "version": "1.0.0",
+  "description": "AngularJS i18n using PascalPrecht's module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhankumar028/i18n-using-AngularJS.git"
+  },
+  "author": "MadhankumarJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madhankumar028/i18n-using-AngularJS/issues"
+  },
+  "homepage": "https://github.com/madhankumar028/i18n-using-AngularJS#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
