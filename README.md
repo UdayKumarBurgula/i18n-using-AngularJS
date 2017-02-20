@@ -6,7 +6,7 @@
 
 ## Steps to bootstrap this app
 ```text
-  1. Clone this project using $git clone https://github.com/madhankumar028/bilingual_node.git
+  1. Clone this project using $git clone https://github.com/madhankumar028/i18n-using-AngularJS.git
   2. npm install
   3. npm run dev
 ```
