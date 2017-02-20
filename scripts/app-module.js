@@ -12,12 +12,10 @@
 
                     'ui.router',
                     'pascalprecht.translate',
-                    'LocalStorageModule',
 
                     /* Features */
                     'app.constant',
                     'app.login',
-                    'app.signup',
                     'app.home'
                   ])
      .config(config);
@@ -47,11 +45,6 @@
              url: '/login',
              templateUrl: 'views/login/login.html',
              controller: 'LoginController as LoginCtrl'
-         }).state('signup', {
-             name: 'signup',
-             url: '/signup',
-             templateUrl: 'views/signup/signup.html',
-             controller: 'SignupController as SignupCtrl'
          });
 
          $urlRouterProvider.otherwise("/login");
